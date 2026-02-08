@@ -369,6 +369,97 @@ footer img {
 	margin: 50px 0 0 0;
 }
 
+
+/* services */
+/* services */
+/* services */
+/* services */
+/* services */
+.services__more {
+	background: #fff;
+}
+
+/* works */
+.works {
+	padding: 120px 80px;
+}
+
+.works h2 {
+    margin: 28px 0;
+}
+
+.works__inner {
+	margin: 0 0 100px 0;
+}
+
+.works__item {
+	display: flex;
+    justify-content: space-between;
+    gap: 80px;
+	margin: 20px 0 0 0;
+}
+
+.works__num {
+	font-size: 192px;
+}
+
+.works__box h3 {
+	margin: 24px 0 28px 0;
+}
+
+.works__img {
+	margin: 24px 0 80px;
+}
+
+/* philosophy */
+.philosophy {
+	padding: 100px 150px;
+	text-align: center;
+}
+
+.philosophy h2 {
+	margin: 28px 0 50px;
+}
+
+.philosophy__item {
+	margin: 20px 0 0 0;
+	padding: 60px 100px;
+	border-radius: 20px;
+	background: #D2F8DC;
+}
+
+.philosophy__text {
+	margin: 40px 0 0 0;
+	font-size: 30px;
+}
+
+
+/* connect */
+.connect {
+	display: flex;
+	align-items: center;
+	padding: 80px 40px;
+	background: #F4F7F5;
+}
+
+.connect__block {
+	width: 50%;
+	padding: 0 60px;
+	text-align: center;
+}
+
+.connect__block a {
+	line-height: 1;
+	margin: 60px 0 0 0;
+	padding: 24px 30px;
+}
+.connect img {
+	width: 50%;
+}
+
+
+
+
 @media (max-width: 1279px) {
 	h2 {
 		font-size: 48px;
