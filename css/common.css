@@ -342,6 +342,33 @@ footer img {
 	font-size: 12px;
 }
 
+
+/* booking */
+/* booking */
+/* booking */
+/* booking */
+/* booking */
+.booking__header {
+	background: #D2F8DC;
+}
+
+.book {
+	padding: 80px 40px;
+	background: #D2F8DC;
+}
+
+.book .hero__wrap {
+	gap: 100px;
+}
+
+.book h2 {
+	font-size: 60px;
+}
+
+.book .btn {
+	margin: 50px 0 0 0;
+}
+
 @media (max-width: 1279px) {
 	h2 {
 		font-size: 48px;
@@ -464,6 +491,28 @@ footer img {
 	/* footer */
 	.footer__block {
 		gap: 80px;
+	}
+
+
+	/* booking */
+	/* booking */
+	/* booking */
+	/* booking */
+	/* booking */
+	.book .hero__wrap {
+		gap: 32px;
+	}
+
+	.book__img {
+		width: 45%;
+	}
+
+	.book h2 {
+		font-size: 48px;
+	}
+
+	.book .btn {
+		margin: 50px 0 0 0;
 	}
 }
 
@@ -710,6 +759,33 @@ footer img {
 
 	.footer__text {
 		margin: 0 0 24px 0;
+	}
+
+
+	/* booking */
+	/* booking */
+	/* booking */
+	/* booking */
+	/* booking */
+	.book {
+		padding: 80px 16px;
+	}
+
+	.book .hero__wrap {
+		gap: 40px;
+		flex-direction: column;
+	}
+
+	.book__img {
+		width: 100%;
+	}
+
+	.book h2 {
+		font-size: 32px;
+	}
+
+	.book .btn {
+		margin: 28px 0 0 0;
 	}
 
 }
