@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- 共通 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>takahashi tsuzumi portfolio</title>
-    <meta name="description" content="">
-    <meta property="og:url" content="https://tkhstzm.github.io/portfolio/">
-    <meta property="og:title" content="takahashi tsuzumi portfolio">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="髙橋鼓のポートフォリオ">
-    <meta property="og:image" content="">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:site_name" content="takahashi tsuzumi portfolio">
+    <meta property="og:image" content="https://tkhstzm.github.io/finance-website-practice/images/ogp.jpg">
+    <meta property="og:site_name" content="finance-website-practice">
     <meta property="og:locale" content="ja_JP">
-    <link rel="icon" href="images/favicon.ico" sizes="16x16">
-    <link rel="apple-touch-icon-precomposed" href="images/icon-256x256.png">
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/common.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>finance-website-practice | services</title>
+    <meta name="description" content="figmaのテンプレートを参考に、模写コーディングを行ったサイトのServicesページです。">
+    <meta property="og:title" content="finance-website-practice | services">
+    <meta property="og:description" content="figmaのテンプレートを参考に、模写コーディングを行ったサイトのServicesページです。">
+    <meta property="og:url" content="https://tkhstzm.github.io/finance-website-practice/services.html">
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   </head>
   <body>
     <!-- header -->
     <header>
         <h1>
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="Noble Finance ロゴ">
             </a>
         </h1>
@@ -38,7 +35,7 @@
             <ul class="nav__list">
                 <li><a href="#" class="link">Services</a></li>
                 <li>
-                    <a href="#" class="link btn">
+                    <a href="booking.html" class="link btn">
                         <span class="pc-only">Book an appointment</span>
                         <span class="sp-only">Book</span>
                     </a>
@@ -55,7 +52,7 @@
                 <div class="hero__text">
                     <h2>Your Financial Journey, Clearly Defined</h2>
                     <p>Trusted financial guidance for every stage of life and business since 1987</p>
-                    <a href="#" class="link btn">Connect with our experts</a>
+                    <a href="booking.html" class="link btn">Connect with our experts</a>
                 </div>
                 <div class="services__img">
                     <img src="images/pc.png" alt="">
@@ -71,51 +68,53 @@
         
         <!-- works -->
          <section class="works">
-            <div class="works__inner">
-                <p>How it works</p>
-                <h2>A simple onboarding</h2>
-                <p>Serving individuals and small businesses since 1987</p>
-            </div>
+            <div class="works__wrap">
+                <div class="works__inner">
+                    <p>How it works</p>
+                    <h2>A simple onboarding</h2>
+                    <p>Serving individuals and small businesses since 1987</p>
+                </div>
 
 
-            <div class="works__item">
-                <img class="works__num" src="images/1.png" alt="">
+                <div class="works__item">
+                    <img class="works__num" src="images/1.png" alt="">
 
-                <div class="works__block">
-                    <div class="works__box">
-                        <h3>Our tax advisors write you a plan</h3>
-                        <p>Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.</p>
-                    </div>
-                    <div class="works__img">
-                        <img src="images/pencil.png" alt="">
+                    <div class="works__block">
+                        <div class="works__box">
+                            <h3>Our tax advisors write you a plan</h3>
+                            <p>Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.</p>
+                        </div>
+                        <div class="works__img">
+                            <img src="images/pencil.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="works__item">
-                <img class="works__num" src="images/2.png" alt="">
+                <div class="works__item">
+                    <img class="works__num" src="images/2.png" alt="">
 
-                <div class="works__block">
-                    <div class="works__box">
-                        <h3>Onboard us to your finances</h3>
-                        <p>Offer expert guidance and representation to resolve tax audits and disputes with confidence.</p>
-                    </div>
-                    <div class="works__img">
-                        <img src="images/cash.png" alt="">
+                    <div class="works__block">
+                        <div class="works__box">
+                            <h3>Onboard us to your finances</h3>
+                            <p>Offer expert guidance and representation to resolve tax audits and disputes with confidence.</p>
+                        </div>
+                        <div class="works__img">
+                            <img src="images/cash.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="works__item">
-                <img class="works__num" src="images/3.png" alt="">
+                <div class="works__item">
+                    <img class="works__num" src="images/3.png" alt="">
 
-                <div class="works__block">
-                    <div class="works__box">
-                        <h3>We solve the rest</h3>
-                        <p>Maintain organized financial records and provide clear reports to support business growth and financial health.</p>
-                    </div>
-                    <div class="works__img">
-                        <img src="images/cube.png" alt="">
+                    <div class="works__block">
+                        <div class="works__box">
+                            <h3>We solve the rest</h3>
+                            <p>Maintain organized financial records and provide clear reports to support business growth and financial health.</p>
+                        </div>
+                        <div class="works__img">
+                            <img src="images/cube.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,43 +122,47 @@
 
         <!-- philosophy -->
         <section class="philosophy">
-            <p>Philosophy</p>
-            <h2>We believe:</h2>
+            <div class="philosophy__wrap">
+                <p>Philosophy</p>
+                <h2>We believe:</h2>
 
-            <div class="philosophy__item">
-                <p class="philosophy__num">01</p>
-                <p class="philosophy__text">In empowering individuals and small businesses with the knowledge and tools they need to achieve lasting financial confidence.</p>
-            </div>
-            <div class="philosophy__item">
-                <p class="philosophy__num">02</p>
-                <p class="philosophy__text">That personalized, trusted guidance, built on decades of experience, is the foundation of a successful financial partnership.</p>
-            </div>
-            <div class="philosophy__item">
-                <p class="philosophy__num">03</p>
-                <p class="philosophy__text">In simplifying complex financial matters, providing clear, actionable strategies that pave the way for your financial well-being.</p>
+                <div class="philosophy__item">
+                    <p class="philosophy__num">01</p>
+                    <p class="philosophy__text">In empowering individuals and small businesses with the knowledge and tools they need to achieve lasting financial confidence.</p>
+                </div>
+                <div class="philosophy__item">
+                    <p class="philosophy__num">02</p>
+                    <p class="philosophy__text">That personalized, trusted guidance, built on decades of experience, is the foundation of a successful financial partnership.</p>
+                </div>
+                <div class="philosophy__item">
+                    <p class="philosophy__num">03</p>
+                    <p class="philosophy__text">In simplifying complex financial matters, providing clear, actionable strategies that pave the way for your financial well-being.</p>
+                </div>
             </div>
         </section>
 
          <!-- connect -->
         <section class="connect">
-            <div class="connect__block">
-                <h2>Say goodbye to taxes of the past</h2>
-                <a href="#" class="btn">Connect with our experts</a>
+            <div class="connect__wrap">
+                <div class="connect__block">
+                    <h2>Say goodbye to taxes of the past</h2>
+                    <a href="booking.html" class="btn">Connect with our experts</a>
+                </div>
+                <img src="images/calculator.png" alt="">
             </div>
-            <img src="images/calculator.png" alt="">
         </section>
      </main>
 
      <!-- footer -->
     <footer>
             <div class="footer__block">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="images/logo-white.png" alt="">
                 </a>
                 <nav>
                     <ul class="nav__list">
                         <li><a href="#" class="link">Services</a></li>
-                        <li><a href="#" class="link btn">Book an appointment</a></li>
+                        <li><a href="booking.html" class="link btn">Book an appointment</a></li>
                     </ul>
                 </nav>
                 

@@ -7,6 +7,15 @@ body {
 	letter-spacing: -0.045em;
 	line-height: 1.05;
 	background: #F9F9F9;
+
+	/* footer を下部に固定するため */
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+	flex: 1;
 }
 
 img {
@@ -42,14 +51,17 @@ h3 {
 	background: #A0F1BD;
 }
 
-/* max画面幅を1500に */
+/* max幅を1500に */
 .hero__wrap,
 .services__inner,
 .services__block,
 .testimonial__wrap,
 .benefits__wrap,
 .cta__wrap,
-.experts__wrap {
+.experts__wrap,
+.works__wrap,
+.philosophy__wrap,
+.connect__wrap {
 	max-width: 1500px;
 	margin: 0 auto;
 }
@@ -239,6 +251,7 @@ header .btn:hover {
 
 .icon__img {
 	width: 48px;
+	margin: 0;
 	border-radius: 16px;
 }
 
@@ -413,9 +426,12 @@ footer img {
 	background: #D2F8DC;
 }
 
-.book {
-	padding: 80px 40px;
+.booking__main {
 	background: #D2F8DC;
+}
+
+.book {
+	padding: 80px 40px;	
 }
 
 .book .hero__wrap {
@@ -437,7 +453,7 @@ footer img {
 /* services */
 /* services */
 .services__more {
-	background: #fff;
+	background: #F9F9F9;
 }
 
 .services__more .hero__text {
@@ -451,6 +467,7 @@ footer img {
 /* works */
 .works {
 	padding: 120px 80px;
+	background: #FFF;
 }
 
 .works h2 {
@@ -495,6 +512,7 @@ footer img {
 	padding: 100px 150px;
 	text-align: center;
 	border-top: 1px solid #C7C7C7;
+	background: #FFF;
 }
 
 .philosophy h2 {
@@ -516,10 +534,13 @@ footer img {
 
 /* connect */
 .connect {
-	display: flex;
-	align-items: center;
 	padding: 80px 40px;
 	background: #F4F7F5;
+}
+
+.connect__wrap {
+	display: flex;
+	align-items: center;
 }
 
 .connect__block {
@@ -604,12 +625,12 @@ footer img {
 		font-size: 48px;
 	}
 
-	.benefits__wrap {
+	.benefits__inner {
 		gap: 50px;
 		margin: 0 0 100px 0;
 	}
 
-	.benefits__wrap p {
+	.benefits__inner p {
 		width: 50%;
 	}
 
@@ -737,7 +758,7 @@ footer img {
 	}
 
 	/* connect */
-	.connect {
+	.connect__wrap {
 		gap: 24px;
 	}
 
@@ -759,6 +780,12 @@ footer img {
 		font-size: 40px;
 	}
 	
+	img {
+		display: block;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
 	/* header */
 	header {
 		height: 69px;
@@ -889,6 +916,10 @@ footer img {
 		height: 250px;
 	}
 
+	.break img {
+		max-width: unset;
+	}
+
 	/* benefits */
 	.benefits {
 		padding: 80px 16px;
@@ -903,12 +934,12 @@ footer img {
 		font-size: 48px;
 	}
 
-	.benefits__wrap {
+	.benefits__inner {
 		display: block;
 		margin: 0 0 80px 0;
 	}
 
-	.benefits__wrap p {
+	.benefits__inner p {
 		width: 100%;
 	}
 
@@ -924,6 +955,9 @@ footer img {
 		border-left: none;
 	}
 
+	.benefits__icon {
+		display: inline-block;
+	}
 	.benefits__item h3 {
 		font-size: 22px;
 	}
@@ -934,7 +968,7 @@ footer img {
 	}
 
 	/* cta */
-	.cta {
+	.cta__wrap {
     	flex-direction: column-reverse;
 	}
 
@@ -948,6 +982,7 @@ footer img {
 
 	.cta img {
 		width: 100%;
+		max-width: unset;
 		border-radius: 20px;
 	}
 
@@ -965,6 +1000,10 @@ footer img {
 	/* footer */
 	footer {
 		padding: 32px 24px;
+	}
+
+	footer img {
+		display: inline-block;
 	}
 
 	.footer__block {
@@ -1044,13 +1083,22 @@ footer img {
 	}
 
 	/* works */
+	.works {
+		padding: 120px 24px;
+	}
+
 	.works__item {
 		display: block;
 	}
 
+	.works__num {
+		width: 118px;
+		margin: 0 0 40px 0;
+	}
+
 	.works__block {
 		display: block;
-		padding: 24px 24px 80px;
+		padding: 24px;
 	}
 	
 	.works__box {
@@ -1069,24 +1117,34 @@ footer img {
 
 	/* philosophy */
 	.philosophy {
-		padding: 80px 40px;
+		padding: 80px 24px;
 	}
 
 	.philosophy__item {
-		padding: 60px 40px;
+		padding: 60px 24px;
 	}
 
 	.philosophy__text {
-		font-size: 26px;
+		font-size: 22px;
 	}
 
 	/* connect */
 	.connect {
-		gap: 24px;
+		padding: 80px 24px;
+		gap: 20px;
 	}
 	
+	.connect__wrap {
+		flex-direction: column-reverse;
+	}
+
 	.connect__block {
-		padding: 0;
+		width: 100%;
+		padding: 60px 24px;
+	}
+
+	.connect__wrap img {
+		width: 100%;
 	}
 
 }
