@@ -1,5 +1,8 @@
 @charset "utf-8";
 body {
+	display: flex;
+    flex-direction: column;
+	min-height: 100vh;
 	font-size: 16px;
 	font-family: "Work Sans", sans-serif;
 	color: #2E4F21;
@@ -7,11 +10,6 @@ body {
 	letter-spacing: -0.045em;
 	line-height: 1.05;
 	background: #F9F9F9;
-
-	/* footer を下部に固定するため */
-	min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 main {
@@ -32,7 +30,7 @@ h3 {
 	font-size: 40px;
 }
 
-.link {
+a {
 	font-size: 12px;
 }
 
@@ -97,10 +95,6 @@ header .btn:hover {
 	border-radius: 0 0 16px 16px;
 }
 
-.hero h2 {
-	font-size: 80px;
-}
-
 .hero__wrap {
 	display: flex;
 	justify-content: space-between;
@@ -110,6 +104,10 @@ header .btn:hover {
 
 .hero__text {
 	width: 60%;
+}
+
+.hero__title {
+	font-size: 80px;
 }
 
 .hero__wrap p {
@@ -129,13 +127,13 @@ header .btn:hover {
 }
 
 /* services */
-.services h2 {
-	margin: 28px 0;
-}
-
 .services__inner {
 	padding: 120px 40px 100px;
 	text-align: center;
+}
+
+.services h2 {
+	margin: 28px 0;
 }
 
 .services a {
@@ -163,6 +161,9 @@ header .btn:hover {
 	flex-direction: row-reverse;
 }
 
+.services__img {
+	width: 50%;
+}
 
 .services__box {
 	width: 50%;
@@ -195,7 +196,7 @@ header .btn:hover {
 }
 
 .testimonial__select {
-	flex: 0 0 310px;
+	/* flex: 0 0 310px; */
 }
 
 .testimonial__link {
@@ -221,7 +222,6 @@ header .btn:hover {
 .testimonial__link-active .testimonial__location {
 	color: #D5E4D0;
 }
-
 
 .testimonial__category {
 	margin: 0 0 16px 0;
@@ -257,7 +257,6 @@ header .btn:hover {
 
 /* break */
 .break {
-	width: 100%;
 	height: 600px;
 }
 
@@ -272,23 +271,19 @@ header .btn:hover {
 	background: #fff;
 }
 
-.benefits h3 {
-	font-size: 30px;
-}
-
 .benefits__inner {
 	display: flex;
 	justify-content: space-between;
+	gap: 50px;
 	margin: 0 0 160px 0;
 }
 
 .benefits__wrap h2 {
 	width: 50%;
-	margin: 0;
 }
 
 .benefits__inner p {
-	width: 575px;
+	width: 50%;
 }
 
 .benefits__block {
@@ -299,8 +294,7 @@ header .btn:hover {
 
 .benefits__item {
 	width: calc((100% - 40px) / 3);
-	padding: 20px 50px;
-	gap: 30px;
+	padding: 20px 20px 20px 50px;
 	border-left: 1px solid #2E4F21;
 }
 
@@ -319,11 +313,6 @@ header .btn:hover {
 	background: #fff;
 }
 
-.cta h2 {
-	font-size: 40px;
-	margin: 0 0 40px 0;
-}
-
 .cta__wrap {
 	display: flex;
 	justify-content: space-between;
@@ -338,9 +327,9 @@ header .btn:hover {
 	color: #fff;
 }
 
-.cta img {
-	width: 50%;
-	border-radius: 20px;
+.cta h2 {
+	font-size: 40px;
+	margin: 0 0 40px 0;
 }
 
 .cta .btn {
@@ -353,11 +342,14 @@ header .btn:hover {
 	background: #A0F1BD;
 }
 
+.cta img {
+	width: 50%;
+}
+
 /* experts */
 .experts {
 	padding: 160px 120px;
 	text-align: center;
-	background: #F9F9F9;
 }
 
 .experts h2 {
@@ -376,15 +368,10 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 	height: 346px;
 	padding: 32px 40px;
 	background: #2E4F21;
 	color: #fff;
-}
-
-footer img {
-	width: 174px;
 }
 
 .footer__block {
@@ -400,6 +387,10 @@ footer img {
 	width: 50%;
 }
 
+footer img {
+	width: 174px;
+}
+
 .footer__block .btn {
 	width: 100%;
 	background: #fff;
@@ -410,57 +401,22 @@ footer img {
 	background: #A0F1BD;
 }
 
+.footer__detail {
+	align-items: end;
+}
+
 .footer__text,
 .footer__copy {
 	width: 50%;
 	font-size: 12px;
 }
 
-
-/* booking */
-/* booking */
-/* booking */
-/* booking */
-/* booking */
-.booking__header {
-	background: #D2F8DC;
-}
-
-.booking__main {
-	background: #D2F8DC;
-}
-
-.book {
-	padding: 80px 40px;	
-}
-
-.book .hero__wrap {
-	gap: 100px;
-}
-
-.book h2 {
-	font-size: 60px;
-}
-
-.book .btn {
-	margin: 50px 0 0 0;
-}
-
-
-/* services */
-/* services */
-/* services */
-/* services */
-/* services */
+/* ----- services ----- */
 .services__more {
 	background: #F9F9F9;
 }
 
 .services__more .hero__text {
-	width: 50%;
-}
-
-.services__img {
 	width: 50%;
 }
 
@@ -470,17 +426,22 @@ footer img {
 	background: #FFF;
 }
 
-.works h2 {
-    margin: 28px 0;
-}
-
 .works__inner {
 	margin: 0 0 100px 0;
+}
+
+.works h2 {
+    margin: 28px 0;
 }
 
 .works__item {
 	display: flex;
 	margin: 20px 0 0 0;
+}
+
+.works__num {
+	width: 225px;
+	height: 100%;
 }
 
 .works__block {
@@ -491,11 +452,6 @@ footer img {
 .works__box {
 	width: 50%;
 	margin: 0 80px;
-}
-
-.works__num {
-	width: 225px;
-	height: 100%;
 }
 
 .works__box h3 {
@@ -516,7 +472,7 @@ footer img {
 }
 
 .philosophy h2 {
-	margin: 28px 0 50px;
+	padding: 28px 0 50px;
 }
 
 .philosophy__item {
@@ -530,7 +486,6 @@ footer img {
 	margin: 40px 0 0 0;
 	font-size: 30px;
 }
-
 
 /* connect */
 .connect {
@@ -554,12 +509,35 @@ footer img {
 	margin: 60px 0 0 0;
 	padding: 24px 30px;
 }
+
 .connect img {
 	width: 50%;
 }
 
+/* ----- booking ----- */
+.booking__header {
+	background: #D2F8DC;
+}
 
+.booking__main {
+	background: #D2F8DC;
+}
 
+.book {
+	padding: 80px 40px;	
+}
+
+.book .hero__wrap {
+	gap: 100px;
+}
+
+.book__img {
+	width: 40%;
+}
+
+.book .btn {
+	margin: 50px 0 0 0;
+}
 
 @media (max-width: 1279px) {
 	h2 {
@@ -586,7 +564,7 @@ footer img {
 		gap: 24px;
 	}
 
-	.hero h2 {
+	.hero__title {
 		font-size: 58px;
 	}
 
@@ -596,10 +574,6 @@ footer img {
 	}
 
 	/* services item */
-	.services__block {
-		padding: 20px;
-	}
-
 	.services__item {
 		gap: 60px;
 		width: 100%;
@@ -615,23 +589,18 @@ footer img {
 		gap: 28px;
 	}
 
+	.testimonial__comment {
+		padding: 0 30px 0 40px;
+	}
+
 	/* break */
 	.break {
 		height: 533px;
 	}
 
 	/* benefits */
-	.benefits h3 {
-		font-size: 48px;
-	}
-
 	.benefits__inner {
-		gap: 50px;
 		margin: 0 0 100px 0;
-	}
-
-	.benefits__inner p {
-		width: 50%;
 	}
 
 	.benefits__block {
@@ -641,7 +610,6 @@ footer img {
 	.benefits__item {
 		width: 100%;
 		padding: 20px 0;
-		gap: 30px;
 		border-top: 1px solid #2E4F21;
 		border-left: none;
 	}
@@ -650,33 +618,13 @@ footer img {
 		font-size: 26px;
 	}
 
-	.benefits__item h3,
 	.benefits__item p {
-		margin: 30px 0 0 0;
+		width: 80%;
 	}
 
 	/* cta */
 	.cta h2 {
 		font-size: 34px;
-	}
-
-	.cta__block {
-		width: 50%;
-		padding: 60px;
-		border-radius: 20px;
-		background: #2E4F21;
-		color: #fff;
-	}
-
-	.cta img {
-		width: 50%;
-		border-radius: 20px;
-	}
-
-	.cta .btn {
-		margin: 40px 0 0 0;
-		background: #fff;
-		color: #2E4F21;
 	}
 
 	/* experts */
@@ -689,33 +637,11 @@ footer img {
 		gap: 80px;
 	}
 
-
-	/* booking */
-	/* booking */
-	/* booking */
-	/* booking */
-	/* booking */
-	.book .hero__wrap {
-		gap: 32px;
+	.nav__list {
+		justify-content: space-between;
 	}
 
-	.book__img {
-		width: 45%;
-	}
-
-	.book h2 {
-		font-size: 48px;
-	}
-
-	.book .btn {
-		margin: 50px 0 0 0;
-	}
-
-	/* services */
-	/* services */
-	/* services */
-	/* services */
-	/* services */
+	/* ----- services ----- */
 	.services__more {
 		padding: 100px 40px;
 	}
@@ -765,6 +691,11 @@ footer img {
 	.connect__block {
 		padding: 0;
 	}
+
+	/* ----- booking ----- */
+	.book .hero__wrap {
+		gap: 32px;
+	}
 }
 
 @media (max-width: 799px) {
@@ -774,10 +705,6 @@ footer img {
 
 	h3 {
 		font-size: 28px;
-	}
-
-	.hero h2 {
-		font-size: 40px;
 	}
 	
 	img {
@@ -818,20 +745,20 @@ footer img {
 		gap: 40px;
 	}
 
+	.hero__text {
+		width: 100%;
+	}
+
+	.hero__title {
+		font-size: 40px;
+	}
+
 	.hero__wrap p {
 		margin: 16px 0 0 0;
 	}
 
 	.hero a {
 		margin: 40px 0 0 0;
-	}
-
-	.hero__text {
-		width: 100%;
-	}
-
-	.hero h2 {
-		font-size: 40px;
 	}
 
 	.hero__img {
@@ -850,9 +777,12 @@ footer img {
 
 	.services__item {
 		display: block;
-		width: 100%;
 		padding: 40px 16px;
 	}
+
+	.services__img {
+        width: 100%;
+    }
 
 	.services__box {
 		width: 100%;
@@ -869,7 +799,6 @@ footer img {
 	}
 
 	.testimonial__wrap {
-		
 		padding: 24px 16px;
 		background: #fff;
 	}
@@ -925,45 +854,35 @@ footer img {
 		padding: 80px 16px;
 	}
 
-	.benefits h2 {
-		width: 100%;
-		margin: 0 0 32px 0;
-	}
-
-	.benefits h3 {
-		font-size: 48px;
-	}
-
 	.benefits__inner {
 		display: block;
 		margin: 0 0 80px 0;
+	}
+
+	.benefits h2 {
+		width: 100%;
+		margin: 0 0 32px 0;
 	}
 
 	.benefits__inner p {
 		width: 100%;
 	}
 
-	.benefits__block {
-		display: block;
-	}
-
-	.benefits__item {
-		width: 100%;
-		padding: 20px 0;
-		gap: 30px;
-		border-top: 1px solid #2E4F21;
-		border-left: none;
-	}
-
 	.benefits__icon {
 		display: inline-block;
 	}
+
+	.benefits h3 {
+		font-size: 48px;
+		margin: 30px 0 20px;
+	}
+
 	.benefits__item h3 {
 		font-size: 22px;
 	}
 
-	.benefits__item h3,
 	.benefits__item p {
+		width: 100%;
 		margin: 30px 0 20px;
 	}
 
@@ -983,13 +902,6 @@ footer img {
 	.cta img {
 		width: 100%;
 		max-width: unset;
-		border-radius: 20px;
-	}
-
-	.cta .btn {
-		margin: 40px 0 0 0;
-		background: #fff;
-		color: #2E4F21;
 	}
 
 	/* experts */
@@ -1010,15 +922,6 @@ footer img {
 		display: block;
 	}
 
-	.footer__block .nav__list {
-		justify-content: space-between;
-	}
-
-
-	.footer__block a {
-		width: 100%;
-	}
-
 	.footer__block nav {
 		width: 100%;
 		margin: 80px 0 0 0;
@@ -1033,38 +936,7 @@ footer img {
 		margin: 0 0 24px 0;
 	}
 
-
-	/* booking */
-	/* booking */
-	/* booking */
-	/* booking */
-	/* booking */
-	.book {
-		padding: 80px 16px;
-	}
-
-	.book .hero__wrap {
-		gap: 40px;
-		flex-direction: column;
-	}
-
-	.book__img {
-		width: 100%;
-	}
-
-	.book h2 {
-		font-size: 32px;
-	}
-
-	.book .btn {
-		margin: 28px 0 0 0;
-	}
-
-	/* services */
-	/* services */
-	/* services */
-	/* services */
-	/* services */
+	/* ----- services ----- */
 	.services__more {
 		padding: 68px 40px;
 	}
@@ -1075,20 +947,11 @@ footer img {
 	
 	.services__more .hero__text {
 		width: 100%;
-		margin: 0;
-	}
-
-	.services__img {
-		width: 100%;
 	}
 
 	/* works */
 	.works {
 		padding: 120px 24px;
-	}
-
-	.works__item {
-		display: block;
 	}
 
 	.works__num {
@@ -1097,22 +960,7 @@ footer img {
 	}
 
 	.works__block {
-		display: block;
 		padding: 24px;
-	}
-	
-	.works__box {
-		width: 100%;
-		margin: 0;
-	}
-
-	.works__box h3 {
-		margin: 0 0 28px 0;
-	}
-
-	.works__img {
-		width: 100%;
-		margin: 70px 0 0 0;
 	}
 
 	/* philosophy */
@@ -1131,11 +979,11 @@ footer img {
 	/* connect */
 	.connect {
 		padding: 80px 24px;
-		gap: 20px;
 	}
 	
 	.connect__wrap {
 		flex-direction: column-reverse;
+		gap: 20px;
 	}
 
 	.connect__block {
@@ -1147,4 +995,21 @@ footer img {
 		width: 100%;
 	}
 
+	/* ----- booking ----- */
+	.book {
+		padding: 80px 16px;
+	}
+
+	.book .hero__wrap {
+		gap: 40px;
+		flex-direction: column;
+	}
+
+	.book__img {
+		width: 100%;
+	}
+	
+	.book .btn {
+		margin: 28px 0 0 0;
+	}
 }
