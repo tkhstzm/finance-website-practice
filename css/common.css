@@ -74,6 +74,11 @@ header {
 	background: #A0F1BD;
 }
 
+.logo img {
+	width: auto;
+	height: 15px;
+}
+
 .nav__list {
 	display: flex;
 	gap: 20px;
