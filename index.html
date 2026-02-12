@@ -26,7 +26,7 @@
     <!-- header -->
     <header>
         <h1>
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="Noble Finance ロゴ">
             </a>
         </h1>
@@ -48,10 +48,10 @@
      <main>
         <!-- hero -->
         <section class="hero">
-            <div class="hero__wrap inner">
-                <div class="hero__text">
+            <div class="hero__container container">
+                <div class="hero__content">
                     <h2 class="hero__title">Financial Clarity You Can Trust</h2>
-                    <p>Trusted financial guidance for every stage of life and business since 1987</p>
+                    <p class="hero__description">Trusted financial guidance for every stage of life and business since 1987</p>
                     <a href="booking.html" class="link btn">Connect with our experts</a>
                 </div>
                 <div class="hero__img">
@@ -63,59 +63,59 @@
 
         <!-- services -->
          <section class="services">
-            <div class="services__inner inner">
+            <div class="services__container container">
                 <p>Services</p>
-                <h2>Let us handle the numbers,<br>so you can handle your success.</h2>
-                <p>Serving individuals and small businesses since 1987</p>
+                <h2 class="services__title">Let us handle the numbers,<br>so you can handle your success.</h2>
+                <p class="services__description">Serving individuals and small businesses since 1987</p>
                 <a href="booking.html" class="link btn">Schedule a call</a>
             </div>
 
-            <div class="services__block inner">
-                <div class="services__item">
-                    <div class="services__img">
+            <div class="services__block container">
+                <div class="service-card">
+                    <div class="service-card__img">
                         <img src="images/tax.png" alt="">
                     </div>
-                    <div class="services__box">
+                    <div class="service-card__content">
                         <h3>Tax Preparation & Filing</h3>
                         <p>Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.</p>
-                        <ul class="services__detail">
-                            <li class="services__note">1099 taxes</li>
-                            <li class="services__note">Dependents</li>
-                            <li class="services__note">Trust Taxes</li>
+                        <ul class="service-card__features">
+                            <li class="service-card__feature">1099 taxes</li>
+                            <li class="service-card__feature">Dependents</li>
+                            <li class="service-card__feature">Trust Taxes</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="services__block inner services__block-right">
-                <div class="services__item">
-                    <div class="services__img">
+            <div class="services__block container services__block-right">
+                <div class="service-card">
+                    <div class="service-card__img">
                         <img src="images/irs.png" alt="">
                     </div>
-                    <div class="services__box">
+                    <div class="service-card__content">
                         <h3>IRS Audit Assistance</h3>
                         <p>Offer expert guidance and representation to resolve tax audits and disputes with confidence.</p>
-                        <ul class="services__detail">
-                            <li class="services__note">1099 taxes</li>
-                            <li class="services__note">Dependents</li>
-                            <li class="services__note">Trust Taxes</li>
+                        <ul class="service-card__features">
+                            <li class="service-card__feature">1099 taxes</li>
+                            <li class="service-card__feature">Dependents</li>
+                            <li class="service-card__feature">Trust Taxes</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="services__block inner">
-                <div class="services__item">
-                    <div class="services__img">
+            <div class="services__block container">
+                <div class="service-card">
+                    <div class="service-card__img">
                         <img src="images/bookkeeping.png" alt="">
                     </div>
-                    <div class="services__box">
+                    <div class="service-card__content">
                         <h3>Bookkeeping & Accounting</h3>
                         <p>Maintain organized financial records and provide clear reports to support business growth and financial health.</p>
-                        <ul class="services__detail">
-                            <li class="services__note">1099 taxes</li>
-                            <li class="services__note">Dependents</li>
-                            <li class="services__note">Trust Taxes</li>
+                        <ul class="service-card__features">
+                            <li class="service-card__feature">1099 taxes</li>
+                            <li class="service-card__feature">Dependents</li>
+                            <li class="service-card__feature">Trust Taxes</li>
                         </ul>
                     </div>
                 </div>
@@ -124,57 +124,57 @@
 
         <!-- testimonial -->
         <section class="testimonial">
-            <div class="testimonial__wrap inner">
+            <div class="testimonial__container container">
                 <h2>Hear From Our Happy Clients</h2>
-                <div class="testimonial__inner">
-
+                
+                <div class="testimonial__tabs__wrap">
                     <!-- 人を選ぶ -->
-                    <div class="testimonial__select">
-                        <button class="testimonial__link testimonial__link-active" data-id="Designer">
-                            <div class="testimonial__item">
-                                <p class="testimonial__category">Graphic Designer</p>
-                                <p class="testimonial__location">Ontario, Canada</p>
+                    <div class="testimonial__tabs">
+                        <button class="testimonial-tab testimonial-tab--active" data-id="Designer">
+                            <div class="testimonial-tab__inner">
+                                <p class="testimonial-tab__role">Graphic Designer</p>
+                                <p class="testimonial-tab__location">Ontario, Canada</p>
                             </div>
                         </button>
 
-                        <button class="testimonial__link" data-id="Photographer">
-                            <div class="testimonial__item">
-                                <p class="testimonial__category">Commercial Photographer</p>
-                                <p class="testimonial__location">Ontario, Canada</p>
+                        <button class="testimonial-tab" data-id="Photographer">
+                            <div class="testimonial-tab__inner">
+                                <p class="testimonial-tab__role">Commercial Photographer</p>
+                                <p class="testimonial-tab__location">Ontario, Canada</p>
                             </div>
                         </button>
 
-                        <button class="testimonial__link" data-id="Stylist">
-                            <div class="testimonial__item">
-                                <p class="testimonial__category">Stylist</p>
-                                <p class="testimonial__location">Austin Texas</p>
+                        <button class="testimonial-tab" data-id="Stylist">
+                            <div class="testimonial-tab__inner">
+                                <p class="testimonial-tab__role">Stylist</p>
+                                <p class="testimonial-tab__location">Austin Texas</p>
                             </div>
                         </button>
                     </div>
                     
                     <!-- コメント内容 -->
-                    <div class="testimonial__comment">
-                        <div class="comment is-active" data-id="Designer">
-                            <p class="testimonial__text">"Managing my taxes as a freelancer used to be overwhelming, but Noble Finance made it effortless.”</p>
-                            <div class="testimonial__icon">
-                                <img class="icon__img" src="images/taylor.jpg" alt="">
+                    <div class="testimonial-card__wrap">
+                        <div class="testimonial-card is-active" data-id="Designer">
+                            <p class="testimonial-card__text">"Managing my taxes as a freelancer used to be overwhelming, but Noble Finance made it effortless.”</p>
+                            <div class="testimonial-card__author">
+                                <img class="testimonial-card__img" src="images/taylor.jpg" alt="">
                                 <p>Taylor M., 28 years old</p>
                             </div>
                         </div>
 
-                        <div class="comment" data-id="Photographer">
-                            <p class="testimonial__text">"From invoicing to tax prep, Noble Finance has been a game-changer for my freelance business.”</p>
-                            <div class="testimonial__icon">
-                                <img class="icon__img" src="images/markus.jpg" alt="">
+                        <div class="testimonial-card" data-id="Photographer">
+                            <p class="testimonial-card__text">"From invoicing to tax prep, Noble Finance has been a game-changer for my freelance business.”</p>
+                            <div class="testimonial-card__author">
+                                <img class="testimonial-card__img" src="images/markus.jpg" alt="">
                                 <p>Markus N., 31 years old</p>
                             </div>
                         </div>
 
-                        <div class="comment" data-id="Stylist">
-                            <p class="testimonial__text">"I used to worry about missing deductions, but with Noble Finance, I know I’m maximizing my savings.”</p>
-                            <div class="testimonial__icon">
-                                <img class="icon__img" src="images/margaret.jpg" alt="">
-                                <p>Taylor M., 28 years old</p>
+                        <div class="testimonial-card" data-id="Stylist">
+                            <p class="testimonial-card__text">"I used to worry about missing deductions, but with Noble Finance, I know I’m maximizing my savings.”</p>
+                            <div class="testimonial-card__author">
+                                <img class="testimonial-card__img" src="images/margaret.jpg" alt="">
+                                <p>Margaret L., 24 years old</p>
                             </div>
                         </div>
                     </div>
@@ -183,11 +183,11 @@
         </section>
 
         <!-- break -->
-        <section class="break"></section>
+        <div class="break"></div>
 
         <!-- benefits -->
          <section class="benefits">
-            <div class="inner">
+            <div class="container">
                 <div class="benefits__inner">
                     <h2>Smart Finance for everyone</h2>
                     <p>At Noble Finance, we believe that financial confidence should be accessible to everyone—whether you’re a solo entrepreneur, managing a growing family, or running a small business.</p>
@@ -220,7 +220,7 @@
 
          <!-- cta -->
         <section class="cta">
-            <div class="cta__wrap inner">
+            <div class="cta__container container">
                 <div class="cta__block">
                     <h2>A custom built plan for you</h2>
                     <p>At Noble Finances, we believe that tax filing should be seamless, accurate, and stress-free. Our approach is centered on three key pillars: simplicity, accuracy, and security.</p>
@@ -234,7 +234,7 @@
 
         <!-- experts -->
         <section class="experts">
-            <div class="inner">
+            <div class="container">
                 <h2>We believe that tax filing should be seamless, accurate, and stress-free. Get started with Noble Finance today!</h2>
                 <a href="booking.html" class="link btn">Connect with our experts</a>
             </div>
@@ -244,7 +244,7 @@
      <!-- footer -->
     <footer>
             <div class="footer__block">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="images/logo-white.png" alt="">
                 </a>
                 <nav>

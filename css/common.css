@@ -50,7 +50,7 @@ a {
 }
 
 /* max幅を1500に */
-.inner {
+.container {
 	max-width: 1500px;
 	margin: 0 auto;
 }
@@ -91,14 +91,14 @@ header .btn:hover {
 	border-radius: 0 0 16px 16px;
 }
 
-.hero__wrap {
+.hero__container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 80px;
 }
 
-.hero__text {
+.hero__content {
 	width: 60%;
 }
 
@@ -106,7 +106,7 @@ header .btn:hover {
 	font-size: 80px;
 }
 
-.hero__wrap p {
+.hero__description {
 	margin: 24px 0 0 0;
 }
 
@@ -123,12 +123,12 @@ header .btn:hover {
 }
 
 /* services */
-.services__inner {
+.services__container {
 	padding: 120px 40px 100px;
 	text-align: center;
 }
 
-.services h2 {
+.services__title {
 	margin: 28px 0;
 }
 
@@ -141,7 +141,7 @@ header .btn:hover {
 	padding: 20px;
 }
 
-.services__item {
+.service-card {
 	display: flex;
 	justify-content: space-between;
 	gap: 70px;
@@ -152,26 +152,26 @@ header .btn:hover {
 	align-items: center;
 }
 
-.services__block-right .services__item {
+.services__block-right .service-card {
 	margin: 0 0 0 auto;
 	flex-direction: row-reverse;
 }
 
-.services__img {
+.service-card__img {
 	width: 50%;
 }
 
-.services__box {
+.service-card__content {
 	width: 50%;
 } 
 
-.services__detail {
+.service-card__features {
 	display: flex;
 	gap: 10px;
 	margin: 70px 0 0 0;
 }
 
-.services__note {
+.service-card__feature {
 	padding: 12px;
 	font-size: 12px;
 	background: #fff;
@@ -184,76 +184,76 @@ header .btn:hover {
 	text-align: center;
 }
 
-.testimonial__inner {
+.testimonial__tabs__wrap {
 	display: flex;
 	gap: 100px;
 	text-align: left;
 	margin: 120px 0 0 0;
 }
 
-.testimonial__select {
+.testimonial__tabs {
 	flex: 0 0 310px;
 }
 
-.testimonial__link {
+.testimonial-tab {
 	width: 310px;
 	padding: 20px 30px;
 	border-radius: 8px;
 }
 
-.testimonial__link-active {
+.testimonial-tab--active {
 	background: #2E4F21;
 }
 
-.testimonial__item {
+.testimonial-tab__inner {
 	padding: 20px 0;
 	color: #506349;
 	border-top: 1px solid #7D9276;
 }
 
-.testimonial__link-active .testimonial__category {
+.testimonial-tab--active .testimonial-tab__role {
 	color: #fff;
 }
 
-.testimonial__link-active .testimonial__location {
+.testimonial-tab--active .testimonial-tab__location {
 	color: #D5E4D0;
 }
 
-.testimonial__category {
+.testimonial-tab__role {
 	margin: 0 0 16px 0;
 	font-size: 18px;
 }
 
-.testimonial__location {
+.testimonial-tab__location {
 	font-size: 12px;
 }
 
-.testimonial__comment {
+.testimonial-card__wrap {
 	flex: 1;
 	padding: 0 40px;
 	border-left: 1px solid #2E4F21;
 }
 
-.comment {
+.testimonial-card {
 	display: none;
 }
 
-.comment.is-active {
+.testimonial-card.is-active {
 	display: block;
 }
 
-.testimonial__text {
+.testimonial-card__text {
 	margin: 0 0 50px 0;
 	font-size: 30px;
 }
 
-.testimonial__icon {
+.testimonial-card__author {
 	display: flex;
 	align-items: center;
 	gap: 28px;
 }
 
-.icon__img {
+.testimonial-card__img {
 	width: 48px;
 	margin: 0;
 	border-radius: 16px;
@@ -315,7 +315,7 @@ header .btn:hover {
 	background: #fff;
 }
 
-.cta__wrap {
+.cta__container {
 	display: flex;
 	justify-content: space-between;
 	gap: 20px;
@@ -426,7 +426,7 @@ footer img {
 	background: #F9F9F9;
 }
 
-.services__more .hero__text {
+.services__more .hero__content {
 	width: 50%;
 }
 
@@ -541,7 +541,7 @@ footer img {
 	padding: 80px 40px;	
 }
 
-.book .hero__wrap {
+.book .hero__container {
 	gap: 100px;
 }
 
@@ -574,7 +574,7 @@ footer img {
 		padding: 100px 24px;
 	}
 
-	.hero__wrap {
+	.hero__container {
 		gap: 24px;
 	}
 
@@ -583,31 +583,31 @@ footer img {
 	}
 
 	/* services */
-	.services__inner {
+	.services__container {
 		padding: 120px 24px 100px;
 	}
 
-	/* services item */
-	.services__item {
+	/* service-card */
+	.service-card {
 		gap: 60px;
 		width: 100%;
 		padding: 64px 50px;
 	}
 
-	.services__detail {
+	.service-card__features {
 		margin: 54px 0 0 0;
 	}
 
 	/* testimonial */
-	.testimonial__inner {
+	.testimonial__tabs__wrap {
 		gap: 28px;
 	}
 
-	.testimonial__comment {
+	.testimonial-card__wrap {
 		padding: 0 30px 0 40px;
 	}
 
-	.testimonial__text {
+	.testimonial-card__text {
 		font-size: 24px;
 	}
 
@@ -711,7 +711,7 @@ footer img {
 	}
 
 	/* ----- booking ----- */
-	.book .hero__wrap {
+	.book .hero__container {
 		gap: 32px;
 	}
 }
@@ -758,12 +758,12 @@ footer img {
 		padding: 40px 16px;
 	}
 
-	.hero__wrap {
+	.hero__container {
 		flex-direction: column-reverse;
 		gap: 40px;
 	}
 
-	.hero__text {
+	.hero__content {
 		width: 100%;
 	}
 
@@ -771,7 +771,7 @@ footer img {
 		font-size: 40px;
 	}
 
-	.hero__wrap p {
+	.hero__description {
 		margin: 16px 0 0 0;
 	}
 
@@ -784,7 +784,7 @@ footer img {
 	}
 
 	/* services */
-	.services__inner {
+	.services__container {
 		padding: 120px 16px 100px;
 	}
 
@@ -793,21 +793,21 @@ footer img {
 		padding: 0 16px 16px;
 	}
 
-	.services__item {
+	.service-card {
 		display: block;
 		padding: 40px 16px;
 	}
 
-	.services__img {
+	.service-card__img {
         width: 100%;
     }
 
-	.services__box {
+	.service-card__content {
 		width: 100%;
 		margin: 70px 0 0 0;
 	}
 
-	.services__detail {
+	.service-card__features {
 		margin: 70px 0 0 0;
 	}
 
@@ -816,48 +816,48 @@ footer img {
 		padding: 36px;
 	}
 
-	.testimonial__wrap {
+	.testimonial__container {
 		padding: 24px 16px;
 		background: #fff;
 	}
 
-	.testimonial__inner {
+	.testimonial__tabs__wrap {
 		display: block;
 		margin: 40px 0 0 0;
 	}
 
-	.testimonial__select {
+	.testimonial__tabs {
 		display: flex;
 	}
 
-	.testimonial__link {
+	.testimonial-tab {
 		display: grid;
 		width: calc(100% / 3);
 		padding: 16px 12px;
 	}
 
-	.testimonial__item {
+	.testimonial-tab__inner {
 		padding: 0;
 		word-break: break-word;
 		letter-spacing: -0.06em;
 	}
 
-	.testimonial__category {
+	.testimonial-tab__role {
 		margin: 8px 0;
 		font-size: 12px;
 	}
 
-	.testimonial__location {
+	.testimonial-tab__location {
 		font-size: 12px;
 		color: #7D9276;
 	}
 
-	.testimonial__comment {
+	.testimonial-card__wrap {
 		padding: 0;
 		border-left: unset;
 	}
 
-	.testimonial__text {
+	.testimonial-card__text {
 		margin: 40px 0 50px 0;
 		font-size: 18px;
 	}
@@ -905,7 +905,7 @@ footer img {
 	}
 
 	/* cta */
-	.cta__wrap {
+	.cta__container {
     	flex-direction: column-reverse;
 	}
 
@@ -964,11 +964,11 @@ footer img {
 		padding: 68px 40px;
 	}
 
-	.services__more .hero__wrap {
+	.services__more .hero__container {
 		gap: 24px;
 	}
 	
-	.services__more .hero__text {
+	.services__more .hero__content {
 		width: 100%;
 	}
 
@@ -1023,7 +1023,7 @@ footer img {
 		padding: 80px 16px;
 	}
 
-	.book .hero__wrap {
+	.book .hero__container {
 		gap: 40px;
 		flex-direction: column;
 	}
