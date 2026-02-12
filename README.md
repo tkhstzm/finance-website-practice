@@ -18,7 +18,7 @@ https://www.figma.com/community/file/1498084903136440786
 
 ## 工夫した点
 - header / main / section / footer を使用し、分かりやすいページの構成を意識
-- BEM命名規則でクラス名を設計
+- BEM命名規則でクラス名を設計 (現在調整中)
 - booking.html ページで、mainのコンテンツ量が画面全体の高さに足りない場合でも footer を下部に表示
 - testimonial の部分では、クリックで表示内容が変わるようにJavaScriptを使用
 
